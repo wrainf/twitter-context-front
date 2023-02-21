@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Twit Text</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./main.js" defer></script>
+<link rel="stylesheet" href="../src/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+
+label {
+        display: block;
+        width: 200px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bgimg">
+  <div class="topmiddle">
+    
+    <h1 class="w3-jumbo w3-animate-top">Twit Text</h1>
+    <p>Get the context for any twitter trend happening around the world. Get Informed</p>
+    
+  </div>
+  <div>
+    <div class="search-box">
+      <input type="password" id="input-api" placeholder="OpenAI Key">
+      <button id="btn-set">Set</button>
+    </div>
+    <div class="search-box">
+      <input type="text" id="input-search" placeholder="Location">
+      <button id="btn-search">Go</button>
+    </div>
+  </div>
+
+</div>
+<h2>Trends</h2>
+<div id="ftrends" class="container"></div>
+<hr>
+<h2>What you need to know</h2>
+<div id="fknow" class="container"><div id="loader"></div></div>
+
+<div id="footer">Developed by  <a href="https://youtube.com/@wrainf">wrainf</a></div>
+
+</body>
+</html>
+
