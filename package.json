@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "node-fetch": "^2.6.9",
+    "openai": "^3.1.0"
+  }
+}
