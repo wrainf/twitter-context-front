@@ -3923,7 +3923,7 @@ exports.createRequestFunction = function (axiosArgs, globalAxios, BASE_PATH, con
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Configuration = void 0;
-const packageJson = require("./package.json");
+const packageJson = require("../package.json");
 class Configuration {
     constructor(param = {}) {
         this.apiKey = param.apiKey;
@@ -4032,7 +4032,7 @@ async function getTweets(query) {
     query = query.replace('#', '')
   }
   console.log(query)
-  const res = await fetch(`http://localhost:3000/tweets/${query}`);
+  const res = await fetch(`https://twitter-context.onrender.com/tweets/${query}`);
   const resJson = await res.json()
 
   const popTweets = resJson.popular;
@@ -4129,7 +4129,7 @@ async function setInfo(trend, key) {
 // gets the trends based on location parameter and makes call to backend to get trends
 // sets up to 5 trends in the trends location of the webpage
 async function setTrend(location) {
-  const res = await fetch(`http://localhost:3000/trends/${location}`);
+  const res = await fetch(`https://twitter-context.onrender.com/trends/${location}`);
   console.log(res);
   const trends = await res.json();
   if(trends.length > 0) {
